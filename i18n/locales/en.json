@@ -1,0 +1,121 @@
+{
+  "siteName": "Savora",
+  "tagline": "Where every meal tells a story",
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact",
+    "gallery": "Gallery",
+    "reserve": "Reserve a Table",
+    "reservations": "Reservations"
+  },
+  "hero": {
+    "title": "Savor the Extraordinary",
+    "subtitle": "Handcrafted cuisine from locally sourced ingredients, served in an atmosphere of warmth and elegance.",
+    "cta": "Reserve a Table"
+  },
+  "about": {
+    "heading": "Our Story",
+    "blurb": "Founded in 2010, Savora has been a cornerstone of the community, bringing people together over exceptional food and warm hospitality. Our chefs blend traditional techniques with modern creativity to craft dishes that celebrate the finest seasonal ingredients.",
+    "chef": "Meet Our Chef",
+    "chefName": "Chef Marco Bellini",
+    "chefStory": "With over 25 years of culinary experience spanning from the trattorias of Tuscany to Michelin-starred kitchens in Paris, Chef Marco Bellini brings a deep passion for Mediterranean flavors and a commitment to farm-to-table excellence. Every dish is a reflection of his journey — rooted in tradition, elevated by innovation.",
+    "philosophy": "Our Philosophy",
+    "philosophyText": "We believe great food starts with great ingredients. We partner with local farmers, fishermen, and artisans to source the freshest, most sustainable products available. Every plate we serve is a celebration of the land and the people who cultivate it."
+  },
+  "menu": {
+    "heading": "Our Menu",
+    "subtitle": "A culinary journey through the seasons",
+    "categories": {
+      "starters": "Starters",
+      "mains": "Main Courses",
+      "desserts": "Desserts",
+      "drinks": "Drinks & Cocktails"
+    },
+    "dietary": {
+      "vegetarian": "Vegetarian",
+      "vegan": "Vegan",
+      "glutenFree": "Gluten Free",
+      "spicy": "Spicy"
+    },
+    "price": "Price"
+  },
+  "featured": {
+    "heading": "Signature Dishes",
+    "subtitle": "Chef selections that define our kitchen"
+  },
+  "testimonials": {
+    "heading": "What Our Guests Say",
+    "items": [
+      {
+        "text": "An unforgettable dining experience. Every dish was a work of art, and the service was impeccable.",
+        "author": "Sarah M.",
+        "role": "Food Critic"
+      },
+      {
+        "text": "The tasting menu was extraordinary. Chef Marco personally came to our table to explain each course. A true gem!",
+        "author": "James & Emily R.",
+        "role": "Regular Patrons"
+      },
+      {
+        "text": "We celebrated our anniversary here and it could not have been more perfect. The ambiance, the food, the wine — all sublime.",
+        "author": "David L.",
+        "role": "Local Guide"
+      }
+    ]
+  },
+  "hours": {
+    "heading": "Hours & Location",
+    "address": "123 Culinary Lane, Downtown District",
+    "phone": "(555) 123-4567",
+    "email": "hello[at]savorarestaurant.com",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "hoursData": {
+      "monThu": "Monday – Thursday: 11:30 AM – 10:00 PM",
+      "friSat": "Friday – Saturday: 11:30 AM – 11:00 PM",
+      "sun": "Sunday: 10:00 AM – 9:00 PM"
+    }
+  },
+  "contact": {
+    "heading": "Get in Touch",
+    "subtitle": "We would love to hear from you. Reserve a table or send us a message.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "date": "Preferred Date",
+      "time": "Preferred Time",
+      "guests": "Number of Guests",
+      "message": "Special Requests",
+      "submit": "Send Request",
+      "submitting": "Sending...",
+      "success": "Thank you! Your reservation request has been received. We will confirm shortly.",
+      "error": "Something went wrong. Please try again or call us directly."
+    },
+    "findUs": "Find Us"
+  },
+  "gallery": {
+    "heading": "Our Gallery",
+    "subtitle": "Moments captured from our kitchen and dining room",
+    "altPrefix": "Savora Restaurant photo"
+  },
+  "footer": {
+    "copyright": "© {year} Savora Restaurant. All rights reserved.",
+    "followUs": "Follow Us",
+    "quickLinks": "Quick Links"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home"
+  }
+}

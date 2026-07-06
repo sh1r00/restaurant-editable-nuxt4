@@ -1,0 +1,121 @@
+export default {
+  siteName: 'Savora',
+  tagline: 'Donde cada comida cuenta una historia',
+  nav: {
+    home: 'Inicio',
+    menu: 'Menú',
+    about: 'Nosotros',
+    contact: 'Contacto',
+    gallery: 'Galería',
+    reserve: 'Reservar Mesa',
+    reservations: 'Reservaciones',
+  },
+  hero: {
+    title: 'Saborea lo Extraordinario',
+    subtitle: 'Cocina artesanal con ingredientes de origen local, servida en un ambiente de calidez y elegancia.',
+    cta: 'Reservar una Mesa',
+  },
+  about: {
+    heading: 'Nuestra Historia',
+    blurb: 'Fundado en 2010, Savora ha sido un pilar de la comunidad, reuniendo a las personas a través de comida excepcional y una cálida hospitalidad. Nuestros chefs combinan técnicas tradicionales con creatividad moderna.',
+    chef: 'Conoce a Nuestro Chef',
+    chefName: 'Chef Marco Bellini',
+    chefStory: 'Con más de 25 años de experiencia culinaria, desde las trattorias de la Toscana hasta cocinas con estrellas Michelin en París, el Chef Marco Bellini aporta una profunda pasión por los sabores mediterráneos y un compromiso con la excelencia de la granja a la mesa.',
+    philosophy: 'Nuestra Filosofía',
+    philosophyText: 'Creemos que la buena comida comienza con buenos ingredientes. Colaboramos con agricultores, pescadores y artesanos locales para obtener los productos más frescos y sostenibles.',
+  },
+  menu: {
+    heading: 'Nuestro Menú',
+    subtitle: 'Un viaje culinario a través de las estaciones',
+    categories: {
+      starters: 'Entrantes',
+      mains: 'Platos Principales',
+      desserts: 'Postres',
+      drinks: 'Bebidas y Cócteles',
+    },
+    dietary: {
+      vegetarian: 'Vegetariano',
+      vegan: 'Vegano',
+      glutenFree: 'Sin Gluten',
+      spicy: 'Picante',
+    },
+    price: 'Precio',
+  },
+  featured: {
+    heading: 'Platos Destacados',
+    subtitle: 'Selecciones del chef que definen nuestra cocina',
+  },
+  testimonials: {
+    heading: 'Lo Que Dicen Nuestros Clientes',
+    items: [
+      {
+        text: 'Una experiencia gastronómica inolvidable. Cada plato era una obra de arte y el servicio fue impecable.',
+        author: 'Sarah M.',
+        role: 'Crítica Gastronómica',
+      },
+      {
+        text: 'El menú degustación fue extraordinario. El Chef Marco vino personalmente a nuestra mesa para explicar cada plato. ¡Una verdadera joya!',
+        author: 'James y Emily R.',
+        role: 'Clientes Habituales',
+      },
+      {
+        text: 'Celebramos nuestro aniversario aquí y no pudo haber sido más perfecto. El ambiente, la comida, el vino — todo sublime.',
+        author: 'David L.',
+        role: 'Guía Local',
+      },
+    ],
+  },
+  hours: {
+    heading: 'Horario y Ubicación',
+    address: '123 Culinary Lane, Distrito Centro',
+    phone: '(555) 123-4567',
+    email: 'hello[at]savorarestaurant.com',
+    days: {
+      monday: 'Lunes',
+      tuesday: 'Martes',
+      wednesday: 'Miércoles',
+      thursday: 'Jueves',
+      friday: 'Viernes',
+      saturday: 'Sábado',
+      sunday: 'Domingo',
+    },
+    hoursData: {
+      monThu: 'Lunes – Jueves: 11:30 – 22:00',
+      friSat: 'Viernes – Sábado: 11:30 – 23:00',
+      sun: 'Domingo: 10:00 – 21:00',
+    },
+  },
+  contact: {
+    heading: 'Contáctanos',
+    subtitle: 'Nos encantaría saber de ti. Reserva una mesa o envíanos un mensaje.',
+    form: {
+      name: 'Nombre Completo',
+      email: 'Correo Electrónico',
+      phone: 'Número de Teléfono',
+      date: 'Fecha Preferida',
+      time: 'Hora Preferida',
+      guests: 'Número de Comensales',
+      message: 'Solicitudes Especiales',
+      submit: 'Enviar Solicitud',
+      submitting: 'Enviando...',
+      success: '¡Gracias! Hemos recibido tu solicitud de reserva. Te confirmaremos en breve.',
+      error: 'Algo salió mal. Inténtalo de nuevo o llámanos directamente.',
+    },
+    findUs: 'Encuéntranos',
+  },
+  gallery: {
+    heading: 'Nuestra Galería',
+    subtitle: 'Momentos capturados de nuestra cocina y comedor',
+    altPrefix: 'Foto del restaurante Savora',
+  },
+  footer: {
+    copyright: '© {year} Savora Restaurant. Todos los derechos reservados.',
+    followUs: 'Síguenos',
+    quickLinks: 'Enlaces Rápidos',
+  },
+  notFound: {
+    title: 'Página No Encontrada',
+    message: 'La página que buscas no existe o ha sido movida.',
+    backHome: 'Volver al Inicio',
+  }
+}
