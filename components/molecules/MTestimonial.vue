@@ -1,7 +1,7 @@
 <template>
   <blockquote
     class="bg-surface rounded-2xl p-6 sm:p-8 shadow-md border border-border/50 relative"
-    :aria-label="$t('testimonials.heading') + ' — ' + author"
+    :aria-label="t('testimonials.heading') + ' — ' + author"
   >
     <div class="text-terracotta/20 absolute top-4 left-4">
       <AIcon name="quote" size="xl" decorative />
@@ -25,6 +25,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 defineProps<{
   text: string
   author: string

@@ -15,9 +15,9 @@
           v-for="diet in item.dietary"
           :key="diet"
           class="px-2 py-0.5 text-xs font-medium rounded-full bg-cream-dark/90 text-wood text-[11px]"
-          :aria-label="$t(dietaryLabels[diet])"
+          :aria-label="t(dietaryLabels[diet])"
         >
-          {{ $t(dietaryLabels[diet]) }}
+          {{ t(dietaryLabels[diet]) }}
         </span>
       </div>
     </div>
@@ -38,6 +38,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 import type { MenuItem } from '~/data/menuItems'
 import { dietaryLabels } from '~/data/menuItems'
 

@@ -19,10 +19,10 @@
           id="hero-heading"
           class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
         >
-          {{ $t('hero.title') }}
+          {{ t('hero.title') }}
         </h1>
         <p class="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-10 text-white/85 leading-relaxed">
-          {{ $t('hero.subtitle') }}
+          {{ t('hero.subtitle') }}
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <ABaseButton
@@ -30,7 +30,7 @@
             size="lg"
             @click="navigateTo(localePath('/contact'))"
           >
-            {{ $t('hero.cta') }}
+            {{ t('hero.cta') }}
             <AIcon name="arrow-right" size="md" decorative />
           </ABaseButton>
           <ABaseButton
@@ -39,7 +39,7 @@
             class="!border-white !text-white hover:!bg-white hover:!text-wood"
             @click="navigateTo(localePath('/menu'))"
           >
-            {{ $t('nav.menu') }}
+            {{ t('nav.menu') }}
           </ABaseButton>
         </div>
       </div>
@@ -52,7 +52,7 @@
           <div class="relative">
             <img
               src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
-              :alt="$t('about.heading')"
+              :alt="t('about.heading')"
               class="rounded-2xl shadow-lg w-full h-[400px] object-cover"
               loading="lazy"
             />
@@ -62,13 +62,13 @@
           </div>
           <div>
             <h2 id="about-blurb-heading" class="font-heading text-3xl sm:text-4xl font-bold mb-6 text-text">
-              {{ $t('about.heading') }}
+              {{ t('about.heading') }}
             </h2>
             <p class="text-text-muted text-lg leading-relaxed mb-8">
-              {{ $t('about.blurb') }}
+              {{ t('about.blurb') }}
             </p>
             <ABaseButton variant="outline" @click="navigateTo(localePath('/about'))">
-              {{ $t('about.heading') }}
+              {{ t('about.heading') }}
               <AIcon name="arrow-right" size="sm" decorative />
             </ABaseButton>
           </div>
@@ -81,10 +81,10 @@
       <div class="container-page">
         <div class="text-center mb-14">
           <h2 id="featured-heading" class="font-heading text-3xl sm:text-4xl font-bold mb-4 text-text">
-            {{ $t('featured.heading') }}
+            {{ t('featured.heading') }}
           </h2>
           <p class="text-text-muted text-lg">
-            {{ $t('featured.subtitle') }}
+            {{ t('featured.subtitle') }}
           </p>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -96,7 +96,7 @@
         </div>
         <div class="text-center mt-10">
           <ABaseButton variant="outline" @click="navigateTo(localePath('/menu'))">
-            {{ $t('nav.menu') }}
+            {{ t('nav.menu') }}
             <AIcon name="arrow-right" size="sm" decorative />
           </ABaseButton>
         </div>
@@ -107,7 +107,7 @@
     <section class="py-20 sm:py-28 bg-surface-alt" aria-labelledby="testimonials-heading">
       <div class="container-page">
         <h2 id="testimonials-heading" class="font-heading text-3xl sm:text-4xl font-bold mb-12 text-center text-text">
-          {{ $t('testimonials.heading') }}
+          {{ t('testimonials.heading') }}
         </h2>
         <div class="grid md:grid-cols-3 gap-6">
           <MTestimonial
@@ -127,25 +127,25 @@
         <div class="grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <h2 id="hours-heading" class="font-heading text-3xl sm:text-4xl font-bold mb-6 text-cream">
-              {{ $t('hours.heading') }}
+              {{ t('hours.heading') }}
             </h2>
             <div class="space-y-4 mb-8">
               <div class="flex items-start gap-3">
                 <AIcon name="clock" size="lg" decorative class="text-terracotta-light shrink-0 mt-0.5" />
                 <div>
-                  <p class="text-cream-dark/80 text-base">{{ $t('hours.hoursData.monThu') }}</p>
-                  <p class="text-cream-dark/80 text-base">{{ $t('hours.hoursData.friSat') }}</p>
-                  <p class="text-cream-dark/80 text-base">{{ $t('hours.hoursData.sun') }}</p>
+                  <p class="text-cream-dark/80 text-base">{{ t('hours.hoursData.monThu') }}</p>
+                  <p class="text-cream-dark/80 text-base">{{ t('hours.hoursData.friSat') }}</p>
+                  <p class="text-cream-dark/80 text-base">{{ t('hours.hoursData.sun') }}</p>
                 </div>
               </div>
               <div class="flex items-start gap-3">
                 <AIcon name="map-pin" size="lg" decorative class="text-terracotta-light shrink-0 mt-0.5" />
-                <p class="text-cream-dark/80 text-base">{{ $t('hours.address') }}</p>
+                <p class="text-cream-dark/80 text-base">{{ t('hours.address') }}</p>
               </div>
               <div class="flex items-start gap-3">
                 <AIcon name="phone" size="lg" decorative class="text-terracotta-light shrink-0 mt-0.5" />
                 <a :href="'tel:' + phoneDigits" class="text-cream-dark/80 hover:text-cream transition-colors text-base">
-                  {{ $t('hours.phone') }}
+                  {{ t('hours.phone') }}
                 </a>
               </div>
             </div>
@@ -153,14 +153,14 @@
               variant="primary"
               @click="navigateTo(localePath('/contact'))"
             >
-              {{ $t('nav.reserve') }}
+              {{ t('nav.reserve') }}
             </ABaseButton>
           </div>
           <div class="rounded-2xl overflow-hidden shadow-xl h-[350px] bg-surface-alt/10 flex items-center justify-center">
             <div class="text-center text-cream-dark/40">
               <AIcon name="map-pin" size="xl" decorative />
               <p class="mt-3 font-heading text-xl">Map</p>
-              <p class="text-sm">{{ $t('hours.address') }}</p>
+              <p class="text-sm">{{ t('hours.address') }}</p>
             </div>
           </div>
         </div>

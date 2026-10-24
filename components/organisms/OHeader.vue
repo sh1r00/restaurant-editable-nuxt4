@@ -12,10 +12,10 @@
           aria-label="Savora — Home"
         >
           <span class="font-heading text-2xl sm:text-3xl font-bold text-terracotta tracking-tight">
-            {{ $t('siteName') }}
+            {{ t('siteName') }}
           </span>
           <span class="hidden sm:block text-xs text-text-muted font-light italic -mt-1">
-            {{ $t('tagline') }}
+            {{ t('tagline') }}
           </span>
         </NuxtLink>
 
@@ -29,9 +29,9 @@
             :key="link.to"
             :to="localePath(link.to)"
             :active="isActive(link.to)"
-            :aria-label="$t(link.label)"
+            :aria-label="t(link.label)"
           >
-            {{ $t(link.label) }}
+            {{ t(link.label) }}
           </AMenuItem>
         </nav>
 
@@ -56,10 +56,10 @@
             variant="primary"
             size="sm"
             class="hidden sm:inline-flex ml-2"
-            :aria-label="$t('nav.reserve')"
+            :aria-label="t('nav.reserve')"
             @click="navigateTo(localePath('/contact'))"
           >
-            {{ $t('nav.reserve') }}
+            {{ t('nav.reserve') }}
           </ABaseButton>
 
           <!-- Mobile menu button -->
@@ -89,11 +89,11 @@
               :key="link.to"
               :to="localePath(link.to)"
               :active="isActive(link.to)"
-              :aria-label="$t(link.label)"
+              :aria-label="t(link.label)"
               class="py-3 text-lg"
               @click="mobileOpen = false"
             >
-              {{ $t(link.label) }}
+              {{ t(link.label) }}
             </AMenuItem>
             <ABaseButton
               variant="primary"
@@ -101,7 +101,7 @@
               class="mt-2 w-full justify-center"
               @click="navigateTo(localePath('/contact')); mobileOpen = false"
             >
-              {{ $t('nav.reserve') }}
+              {{ t('nav.reserve') }}
             </ABaseButton>
           </div>
         </nav>
@@ -111,6 +111,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 import { useI18n } from 'vue-i18n'
 const route = useRoute()
 const localePath = useLocalePath()

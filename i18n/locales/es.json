@@ -8,7 +8,9 @@
     "contact": "Contacto",
     "gallery": "Galería",
     "reserve": "Reservar Mesa",
-    "reservations": "Reservaciones"
+    "reservations": "Reservaciones",
+    "darkMode": "Modo oscuro",
+    "lightMode": "Modo claro"
   },
   "hero": {
     "title": "Saborea lo Extraordinario",
@@ -117,5 +119,11 @@
     "title": "Página No Encontrada",
     "message": "La página que buscas no existe o ha sido movida.",
     "backHome": "Volver al Inicio"
+  },
+  "pwa": {
+    "heading": "Instalar esta aplicación",
+    "description": "Instala esta aplicación para acceder sin conexión y disfrutar de una experiencia más rápida.",
+    "install": "Instalar",
+    "dismiss": "Descartar"
   }
 }

@@ -13,10 +13,10 @@
       </div>
       <div class="relative z-10 container-page text-center text-white">
         <h1 id="gallery-heading" class="font-heading text-4xl sm:text-5xl font-bold mb-4">
-          {{ $t('gallery.heading') }}
+          {{ t('gallery.heading') }}
         </h1>
         <p class="text-lg text-white/80 max-w-2xl mx-auto">
-          {{ $t('gallery.subtitle') }}
+          {{ t('gallery.subtitle') }}
         </p>
       </div>
     </section>

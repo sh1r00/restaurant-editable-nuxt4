@@ -11,10 +11,10 @@
             :to="localePath('/')"
             class="font-heading text-2xl font-bold text-cream hover:text-white transition-colors"
           >
-            {{ $t('siteName') }}
+            {{ t('siteName') }}
           </NuxtLink>
           <p class="mt-3 text-cream-dark/70 text-sm leading-relaxed">
-            {{ $t('tagline') }}
+            {{ t('tagline') }}
           </p>
           <div class="flex gap-3 mt-4">
             <a href="#" class="text-cream-dark/60 hover:text-cream transition-colors" aria-label="Instagram">
@@ -32,7 +32,7 @@
         <!-- Quick Links -->
         <div>
           <h3 class="font-heading text-lg font-semibold text-cream mb-4">
-            {{ $t('footer.quickLinks') }}
+            {{ t('footer.quickLinks') }}
           </h3>
           <ul class="space-y-2">
             <li v-for="link in quickLinks" :key="link.to">
@@ -40,7 +40,7 @@
                 :to="localePath(link.to)"
                 class="text-cream-dark/70 hover:text-cream transition-colors text-sm"
               >
-                {{ $t(link.label) }}
+                {{ t(link.label) }}
               </NuxtLink>
             </li>
           </ul>
@@ -49,35 +49,35 @@
         <!-- Hours -->
         <div>
           <h3 class="font-heading text-lg font-semibold text-cream mb-4">
-            {{ $t('hours.heading') }}
+            {{ t('hours.heading') }}
           </h3>
           <ul class="space-y-1.5 text-sm text-cream-dark/70">
-            <li>{{ $t('hours.hoursData.monThu') }}</li>
-            <li>{{ $t('hours.hoursData.friSat') }}</li>
-            <li>{{ $t('hours.hoursData.sun') }}</li>
+            <li>{{ t('hours.hoursData.monThu') }}</li>
+            <li>{{ t('hours.hoursData.friSat') }}</li>
+            <li>{{ t('hours.hoursData.sun') }}</li>
           </ul>
         </div>
 
         <!-- Contact -->
         <div>
           <h3 class="font-heading text-lg font-semibold text-cream mb-4">
-            {{ $t('contact.heading') }}
+            {{ t('contact.heading') }}
           </h3>
           <ul class="space-y-2 text-sm text-cream-dark/70">
             <li class="flex items-start gap-2">
               <AIcon name="map-pin" size="sm" decorative class="mt-0.5 shrink-0" />
-              <span>{{ $t('hours.address') }}</span>
+              <span>{{ t('hours.address') }}</span>
             </li>
             <li class="flex items-center gap-2">
               <AIcon name="phone" size="sm" decorative class="shrink-0" />
-              <a :href="'tel:' + $t('hours.phone').replace(/[^+\d]/g, '')" class="hover:text-cream transition-colors">
-                {{ $t('hours.phone') }}
+              <a :href="'tel:' + t('hours.phone').replace(/[^+\d]/g, '')" class="hover:text-cream transition-colors">
+                {{ t('hours.phone') }}
               </a>
             </li>
             <li class="flex items-center gap-2">
               <AIcon name="mail" size="sm" decorative class="shrink-0" />
-              <a :href="'mailto:' + $t('hours.email')" class="hover:text-cream transition-colors">
-                {{ $t('hours.email') }}
+              <a :href="'mailto:' + t('hours.email')" class="hover:text-cream transition-colors">
+                {{ t('hours.email') }}
               </a>
             </li>
           </ul>
@@ -86,7 +86,7 @@
 
       <!-- Bottom bar -->
       <div class="mt-10 pt-6 border-t border-cream-dark/20 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream-dark/50">
-        <p>{{ $t('footer.copyright', { year: new Date().getFullYear() }) }}</p>
+        <p>{{ t('footer.copyright', { year: new Date().getFullYear() }) }}</p>
         <div class="flex items-center gap-4">
           <NuxtLink
             to="/admin"
@@ -107,6 +107,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 const localePath = useLocalePath()
 
 const quickLinks = [

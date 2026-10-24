@@ -13,10 +13,10 @@
       </div>
       <div class="relative z-10 container-page text-center text-white">
         <h1 id="menu-heading" class="font-heading text-4xl sm:text-5xl font-bold mb-4">
-          {{ $t('menu.heading') }}
+          {{ t('menu.heading') }}
         </h1>
         <p class="text-lg text-white/80 max-w-2xl mx-auto">
-          {{ $t('menu.subtitle') }}
+          {{ t('menu.subtitle') }}
         </p>
       </div>
     </section>
@@ -39,7 +39,7 @@
               : 'bg-surface text-text-muted hover:bg-surface-alt hover:text-terracotta border border-border/50'"
             @click="activeCategory = cat.key"
           >
-            {{ $t(cat.label) }}
+            {{ t(cat.label) }}
           </button>
         </div>
 
@@ -78,19 +78,19 @@
         <div class="flex flex-wrap justify-center gap-4 text-sm text-text-muted">
           <span class="flex items-center gap-1.5">
             <span class="w-3 h-3 rounded-full bg-green-600" aria-hidden="true" />
-            {{ $t('menu.dietary.vegetarian') }}
+            {{ t('menu.dietary.vegetarian') }}
           </span>
           <span class="flex items-center gap-1.5">
             <span class="w-3 h-3 rounded-full bg-green-700" aria-hidden="true" />
-            {{ $t('menu.dietary.vegan') }}
+            {{ t('menu.dietary.vegan') }}
           </span>
           <span class="flex items-center gap-1.5">
             <span class="w-3 h-3 rounded-full bg-amber-500" aria-hidden="true" />
-            {{ $t('menu.dietary.glutenFree') }}
+            {{ t('menu.dietary.glutenFree') }}
           </span>
           <span class="flex items-center gap-1.5">
             <span class="w-3 h-3 rounded-full bg-red-500" aria-hidden="true" />
-            {{ $t('menu.dietary.spicy') }}
+            {{ t('menu.dietary.spicy') }}
           </span>
         </div>
       </div>
@@ -99,6 +99,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 import { useMenuStore } from '~/stores/menu'
 import { menuCategories } from '~/data/menuItems'
 
