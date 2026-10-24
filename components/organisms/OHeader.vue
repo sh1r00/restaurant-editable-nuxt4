@@ -5,6 +5,7 @@
   >
     <div class="container-page">
       <div class="flex items-center justify-between h-16 sm:h-20">
+        <div class="flex items-center gap-6 md:gap-8">
         <!-- Logo -->
         <NuxtLink
           :to="localePath('/')"
@@ -34,6 +35,7 @@
             {{ t(link.label) }}
           </AMenuItem>
         </nav>
+        </div>
 
         <!-- Right side -->
         <div class="flex items-center gap-2">
